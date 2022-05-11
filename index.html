@@ -1,12 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NETFLIX</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Sorts+Mill+Goudy:ital@1&display=swap" rel="stylesheet">
+
+
 </head>
+
 <body>
+    <div id="container">
+       <header>
+            <h1 id="title">NET<span class="flix">FLIX</span></h1>
+        <h3 id="destriction">Thank you for up at Netflix. Tell as more about your self</h3>
+       </header>
+
+    <div id="survey-form-container">
+        <div id="survey-form">
+
+            <form action="result.html" method="GET" target="_blank">
+                
+                <div class="input-box">
+                    <label for="name">Name</label>
+                    <br>
+                    <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+                </div>
+
+                <div class="input-box">
+                    <label for="age">Age</label> <br>
+                    <input type="number" id="age" name="Age" placeholder="Age"> <br>
+                </div>
+
+                <div class="input-box">
+                    <label for="email">E-mail</label> <br>
+                    <input type="email" id="email" name="email" placeholder="Enter your mail"> <br>
+                </div>
+                
+                <div class="input-box">
+                    <label for="content">Content Type</label>
+                     <br>
+                    <select name="Content" id="dropdown" >
+                        <option value="Series">Series</option> 
+                        <option value="Cartoons">Cartoons</option> 
+                        <option value="Animations">Animations</option> 
+                    </select>
     
+                </div>
+                <br>
+                
+                <div class="input-box">
+                    <label for="Movie">Movie type</label>
+                    <br>
+        
+                    <input type="checkbox" name="movie" id="comedy" value="comedy">
+                    <label for="comedy">Comedy</label><br>
+        
+                    <input type="checkbox" name="movie" id="action" value="action">
+                    <label for="action">Action</label><br>
+        
+                    <input type="checkbox" name="movie" id="romance" value="ramonce">
+                    <label for="romance">Romance</label><br>
+                </div>
+                <br>
+                <div class="input-box"> 
+                    
+                    <label for="gender">Gender</label><br>
+        
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+        
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+        
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+        
+                </div>
+                <br>
+                <div class="input-box">
+                    <label for="feedback">Feedback</label><br>
+                    
+                    <textarea name="Feedback" id="feedback" placeholder="Any commend" cols="30" rows="10" ></textarea>
+                </div>
+
+                <div id="form-submit">
+                    
+                    <input type="submit" value="SEND" id="form-button">
+        
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 </body>
 </html>
